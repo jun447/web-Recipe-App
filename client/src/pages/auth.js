@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
+// import "./../App.css";
 
 export const Auth = () => {
   return (
@@ -59,7 +60,7 @@ const Login = () => {
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button className={"button-20"} type="submit">Login</button>
       </form>
     </div>
   );
@@ -107,7 +108,7 @@ const Register = () => {
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <button type="submit">Register</button>
+        <button className={"button-20"} type="submit">Register</button>
       </form>
     </div>
   );

@@ -21,17 +21,17 @@ export const SavedRecipes = () => {
     fetchSavedRecipes();
   }, []);
   return (
-    <div>
+    <div >
       <h1>Saved Recipes</h1>
-      <ul>
+      <ul >
         {savedRecipes.map((recipe) => (
-          <li key={recipe._id}>
+          <li key={recipe._id} className={"card"} >
             <div>
               <h2>{recipe.name}</h2>
             </div>
             <p>{recipe.description}</p>
-            <img src={recipe.imageUrl} alt={recipe.name} />
             <p>Cooking Time: {recipe.cookingTime} minutes</p>
+            <img className={'img'} src={recipe.imageUrl} alt={recipe.name} />
           </li>
         ))}
       </ul>
